@@ -4,4 +4,4 @@ COPY . /app
 RUN npm install
 USER 10014
 EXPOSE 8080
-CMD ["node","server.js"]
+CMD ["node","app.js"]
