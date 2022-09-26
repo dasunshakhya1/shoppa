@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const connection = require("../utils/db");
 
 
-router.get('/customers', (req, res) => {
+router.get('', (req, res) => {
     const query = 'Select * from customer'
     connection.query(query, (e, r) => {
         if (e) { res.status(500).json({ error: e }) }
