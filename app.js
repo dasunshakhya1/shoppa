@@ -1,7 +1,8 @@
+require('dotenv/config') 
 const express = require('express')
 const morgan = require('morgan')
 
-require('dotenv/config')
+
 
 
 
@@ -16,8 +17,8 @@ app.use(express.json())
 
 
 
-const userRouter = require('./src/routes/user')
-app.use("/users", userRouter)
+const customerRoute = require('./src/routes/customer')
+app.use("/customers", customerRoute)
 
 
-app.listen(8080)
+app.listen(8080,()=>console.log("Server is running on port 8080"))
