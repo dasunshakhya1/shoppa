@@ -12,7 +12,6 @@ stages:
   - stage: Checkout
     jobs: 
       - job: checkout
-        environment: dev
         workspace:
           clean: all
 
